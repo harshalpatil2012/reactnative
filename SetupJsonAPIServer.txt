@@ -1,0 +1,89 @@
+ Create a folder: "JSON-SERVER-REST-API"
+# # 1. cd 
+# # 2. npm init
+# # 3. name: server
+# # 4. author: kapil
+# # 5. finally package.json will be created
+# # >npm i -g json-server
+# # >cd JSON-SERVER-REST-API
+# # >npm i --save json-server
+# #             
+# # >echo>>users.json
+# # st:7000/users/get/101
+# # 
+# # {
+# #     "users": [
+# #       {
+# #         "id": 1,
+# #         "first_name": "Robert",
+# #         "last_name": "Schwartz",
+# #         "email": "rob23@gmail.com"
+# #       },
+# #       {
+# #         "id": 3,
+# #         "first_name": "Anna",
+# #         "last_name": "Smith",
+# #         "email": "annasmith23@gmail.com"
+# #       },
+# #       {
+# #         "id": 4,
+# #         "first_name": "Robert",
+# #         "last_name": "Brown",
+# #         "email": "bobbrown432@yahoo.com"
+# #       },
+# #       {
+# #         "id": 5,
+# #         "first_name": "Roger",
+# #         "last_name": "Bacon",
+# #         "email": "rogerbacon12@yahoo.com"
+# #       },
+# #        {
+# #         "id": 101,
+# #         "first_name": "amit",
+# #         "last_name": "Schwartz",
+# #         "email": "amit@gmail.com"
+# #       },
+# #       {
+# #         "id": 102,
+# #         "first_name": "amit",
+# #         "last_name": "Schwartz",
+# #         "email": "amit@gmail.com"
+# #       }
+# #     ]
+# #   }
+# # 
+# # >echo>>routes.json
+# # {
+# #     "/users/list": "/users",
+# #     "/users/get/:id": "/users/:id",
+# #     "/users/create": "/users",
+# #     "/users/update/:id": "/users/:id",
+# #     "/users/delete/:id": "/users/:id"
+# #   }
+# # 
+# # 
+# # cd "JSON-SERVER-REST-API"
+# # >json-server  --port 7000 --routes routes.json --watch users.json
+# # go to URL: http://localhost:7000/users
+# # for 101 user id: http://localhost:7000/users/get/101
+# #             
+# #             
+# #             
+# # install postman: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=en
+#      
+# 
+select "raw"
+header: Content-Type -JSON
+    body: {
+    "id": 701,
+    "first_name": "amit1",
+    "last_name": "Schwartz",
+    "email": "amit@gmail.com"
+}
+
+
+To RUn in App mode for localhost:
+Go to C:\Users\user234\AppData\Local\Android\Sdk\platform-tools
+Run below command:
+=============================
+adb reverse adb:700  adb:700 

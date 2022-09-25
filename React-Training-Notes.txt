@@ -1,0 +1,42 @@
+
+Important few pointers belonging to reactive natvie
+1. We can build complete application in react native using few components:
+  1.1 webpack --> It will create the bundle in the form of js ANd deploy to the browser or APK
+              
+  1.2 babel --> The role of bable which will transform to react native + react + ES6 into ES5(bundle.js)
+  1.3 ES6/ReactJS --> In react we will write two types of components in react native 1. functional component 2. Class components
+  1.4 Expo --> expo is an framework which contains bundle of tool created around react native for rapid development and its provides 
+     some amazing system api's accessibility like camera, jio location etc
+  1.5 native api ios/andriod --> Its bundle of API which proive env. to create API and IOS bundle
+  
+  
+2. Folder structure of react native apps:
+  2.1 assests--> Contains ui and ux resources in the form of png, jpeg, external css etc.
+  2.2 app.js --> This si the first functional react native component in the form of js or jsx
+  2.3 node_module--> it contains all the dependecy based on react native components
+  2.4 app.json --> This file contain application configuration based on expo framework like orientation(portait/landscpae), 
+        version, flash screen, background image etc.
+  2.5 babelconfig.js this is the babel config files which contain preset for the transformrtion on reative natvie code into ES5 code
+  2.6 package-lock.json   this file contain registery information of npm.js based on the dependencies.
+  2.8 package.json this file contain the all sript with the dependencies and dev dependencies based on the project.
+  
+
+How to build react native app and run using web using expo:
+===================================================
+C:\React-Native\my-barclay
+npx create-expo-app my-barclay
+npx expo install react-native-web@~0.18.7 react-dom@18.0.0 @expo/webpack-config@^0.17.0
+npm start
+enter "w" for web app build
+Open url in browser--> http://localhost:19006/
+
+TO Run emulator 
+===================================================
+C:\Users\user234\AppData\Local\Android\Sdk\emulator>emulator -list-avds
+C:\Users\user234\AppData\Local\Android\Sdk\emulator>emulator -avd Pixel_3a_API_33_x86_64  
+
+To Run app in App mode
+===================================================  	
+	
+  
+  
